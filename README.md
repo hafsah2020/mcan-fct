@@ -52,79 +52,15 @@ mcan-fct/
 │       ├── Contact Page.jpg
 │       ├── Lodge Page.jpg
 │       └── mcan-logo.png
-├── landing.html          # Homepage
-├── about.html            # About MCAN
-├── services.html         # Programs & Services
-├── projects.html         # Islamic Projects
-├── sponsorship.html      # Sponsorship Opportunities
-├── community.html        # Community Engagement
-├── lodge.html           # Lodge Services
-├── contact.html         # Contact Information
+├── index.html          # Homepage
 └── README.md           # Project Documentation
 ```
-
-## Pages Overview
-
-### 🏠 **Landing Page** (`landing.html`)
-- Welcome message and MCAN introduction
-- Core values showcase
-- Islamic foundation with Quranic verse (16:162)
-- Call-to-action for joining MCAN
-
-### ℹ️ **About Page** (`about.html`)
-- MCAN mission, vision, and values
-- Leadership team information
-- Islamic foundation and organizational history
-- Quranic verse reference
-
-### 🕌 **Services Page** (`services.html`)
-- Islamic education programs
-- Spiritual guidance services
-- Welfare support programs
-- Professional development opportunities
-
-### 🚀 **Projects Page** (`projects.html`)
-- Islamic education initiatives
-- Community welfare programs
-- Current and completed projects
-- Social impact statistics
-
-### 🤝 **Sponsorship Page** (`sponsorship.html`)
-- Islamic education sponsorship
-- Mosque and Islamic center support
-- Partnership opportunities
-- Sponsorship benefits and packages
-
-### 👥 **Community Page** (`community.html`)
-- Islamic brotherhood/sisterhood programs
-- Community impact statistics
-- Volunteer opportunities
-- Community engagement activities
-
-### 🏨 **Lodge Page** (`lodge.html`)
-- Islamic hospitality services
-- Halal accommodation facilities
-- Prayer facilities and Islamic amenities
-- Booking and contact information
-
-### 📞 **Contact Page** (`contact.html`)
-- Contact form with Islamic program options
-- MCAN contact information
-- Islamic resources and quick links
-- Prayer times and Islamic calendar access
 
 ## Islamic Foundation
 
 > *"Say verily, my prayer, my sacrifice, my living, and my dying are for Allah, the lord of the worlds"* - **Quran 16:162**
 
 This sacred verse forms the foundation of our work at MCAN, reminding us that all our efforts in supporting Muslim corps members are acts of worship and service to Allah (SWT).
-
-## Leadership Team
-
-- **Ustadh Ahmad Ibrahim** - State Coordinator
-- **Hajia Aisha Yusuf** - Deputy Coordinator  
-- **Br. Abdullahi Mohammed** - General Secretary
-- **Sr. Fatima Usman** - Welfare Secretary
 
 ## Getting Started
 
@@ -138,7 +74,7 @@ This sacred verse forms the foundation of our work at MCAN, reminding us that al
    cd mcan-fct
    ```
 
-3. Open `landing.html` in your browser or serve with a local server
+3. Open `index.html` in your browser or serve with a local server
 
 4. For development, you can use any local server like:
    ```bash
@@ -172,13 +108,13 @@ We welcome contributions to improve the MCAN website. Please:
 
 ## Contact Information
 
-- **Email**: info@mcan.ng, contact@mcan.ng
-- **Phone**: +234 706 555 1234
-- **Address**: MCAN Secretariat, Federal Capital Territory, Abuja, Nigeria
+- **Email**: mcaninfct@gmail.com
+- **Phone**: +234 903 513 1946
+- **Address**: MCAN Secretariat, NYSC Orientation Camp, Kubwa, Abuja, Nigeria
 
 ## License
 
-© 2024 MCAN. All rights reserved.
+© 2025 MCANFCT. All rights reserved.
 
 ---
 
