@@ -1,0 +1,445 @@
+<!--
+    MCAN FCT Website Homepage
+    ------------------------------------------------
+    This is the main landing page for MCAN FCT.
+    - Uses Tailwind CSS for styling and responsive design.
+    - Sections: Header (Navigation), Hero, About Us, How to Join, Get Involved, Contact, Footer.
+    - No sensitive data or credentials are stored in this file.
+    - For backend integration (e.g., contact form), use a secure endpoint.
+    ------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Preconnect and load Google Fonts for typography -->
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Public+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>MCAN FCT</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/image/mcan-logo.png"/>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+        /* Make the form container responsive */
+        .form-container {
+          max-width: 500px;
+          margin: 0 auto;
+          padding: 1em;
+          box-sizing: border-box;
+        }
+
+        /* Responsive form fields */
+        input, select, textarea, button {
+          width: 100%;
+          padding: 0.75em;
+          margin-bottom: 1em;
+          box-sizing: border-box;
+          font-size: 1em;
+        }
+
+        /* Responsive layout for small screens */
+        @media (max-width: 600px) {
+          .form-container {
+            padding: 0.5em;
+          }
+          input, select, textarea, button {
+            font-size: 1em;
+          }
+        }
+    </style>
+</head>
+<body style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(255,255,255)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e'); font-family: 'Public Sans', 'Noto Sans', sans-serif;">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+
+    <!-- =========================
+         Header Section: Logo and Navigation
+    ========================== -->
+ <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-4 md:px-10 py-4">
+  <!-- Logo -->
+  <div class="flex items-center gap-3 text-gray-900">
+    <div class="flex-shrink-0">
+      <img src="assets/image/mcan-logo.png" alt="MCAN FCT Logo" class="h-8 w-8 object-contain" />
+    </div>
+    <h2 class="text-gray-900 text-xl font-bold leading-tight tracking-tighter">MCAN FCT</h2>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <nav class="hidden md:flex flex-1 justify-center items-center gap-8">
+    <a class="text-gray-600 hover:text-[#1dc962]" href="#about">About Us</a>
+    <a class="text-gray-600 hover:text-[#1dc962]" href="#programs-projects">Programs & Projects</a>
+    <a class="text-gray-600 hover:text-[#1dc962]" href="#get-involved">Get Involved</a>
+    <a class="text-gray-600 hover:text-[#1dc962]" href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- Join Us button (visible on all screens) -->
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_knJpLxzTSxMUadPO1y5PbaXSvpBVFPVLtleiRCucb0Z2UA/viewform?usp=dialog" 
+       target="_blank" 
+       rel="noopener noreferrer"
+    class="flex items-center justify-center rounded-md h-10 px-6 bg-[#1dc962] text-white font-semibold shadow-sm hover:bg-[#18a350] transition-colors">
+     Join Us
+    </a>
+</header>
+
+
+
+    <main class="flex-1">
+
+        <!-- =========================
+             Hero Section
+        ========================== -->
+        <section class="relative flex min-h-[600px] flex-col items-center justify-center bg-cover bg-center bg-no-repeat py-20"
+            style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("assets/image/homepage.jpg");'>
+            <div class="mb-8">
+                <img src="assets/image/mcan-logo.png" alt="MCAN FCT Logo" class="h-28 w-28 object-contain mx-auto" />
+            </div>
+            <div class="max-w-4xl text-center px-4">
+                <h1 class="text-white text-5xl font-bold leading-tight tracking-tighter md:text-6xl">Empowering Muslim Corpers in FCT</h1>
+                <p class="mt-4 text-white/90 text-lg font-normal leading-normal md:text-xl">
+                    Join MCAN FCT to build community, enhance your skills, and grow spiritually during your service year.
+                </p>
+                <button class="mt-8 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-8 mx-auto bg-[#1dc962] text-white text-lg font-semibold leading-normal tracking-wide shadow-lg hover:bg-[#18a350] transition-colors">
+                    <span class="truncate">Learn More</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- =========================
+             About Us Section
+        ========================== -->
+        <section class="py-20 px-10" id="about">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-gray-900 text-4xl font-bold leading-tight tracking-tighter">About Us</h2>
+                    <p class="mt-4 text-gray-600 text-lg">
+                        MCAN FCT is dedicated to supporting Muslim corpers in the Federal Capital Territory through community building, capacity development, and spiritual growth. We offer a
+                        range of programs and activities designed to help members thrive during their service year and beyond.
+                    </p>
+                </div>
+                <div class="text-center mb-16">
+                    <h3 class="text-gray-900 text-3xl font-bold leading-tight tracking-tighter">Our Pillars</h3>
+                    <p class="mt-2 text-gray-600 text-lg">We focus on three key areas to support our members:</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                     <!-- Spiritual Growth Pillar -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="p-4 bg-[#1dc962]/10 rounded-full mb-4">
+                            <span class="material-symbols-outlined text-4xl text-[#1dc962]">auto_stories</span>
+                        </div>
+                        <h4 class="text-gray-900 text-xl font-bold">Spiritual Growth</h4>
+                        <p class="text-gray-600 mt-2">Offering spiritual guidance, religious discussions, and activities to foster a deeper understanding and connection with faith.</p>
+                    </div>
+                    <!-- Community Building Pillar -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="p-4 bg-[#1dc962]/10 rounded-full mb-4">
+                            <span class="material-symbols-outlined text-4xl text-[#1dc962]">groups</span>
+                        </div>
+                        <h4 class="text-gray-900 text-xl font-bold">Community Building</h4>
+                        <p class="text-gray-600 mt-2">Creating a supportive network for Muslim corpers to connect, share experiences, and build lasting relationships.</p>
+                    </div>
+                    <!-- Capacity Development Pillar -->
+                    <div class="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="p-4 bg-[#1dc962]/10 rounded-full mb-4">
+                            <span class="material-symbols-outlined text-4xl text-[#1dc962]">work</span>
+                        </div>
+                        <h4 class="text-gray-900 text-xl font-bold">Capacity Development</h4>
+                        <p class="text-gray-600 mt-2">Providing skill-building workshops, seminars, and mentorship programs to enhance professional and personal development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             How to Join Section
+        ========================== -->
+        <section class="bg-gray-50 py-20 px-10" id="join">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-gray-900 text-4xl font-bold leading-tight tracking-tighter">How to Join</h2>
+                    <p class="mt-4 text-gray-600 text-lg">Joining MCAN FCT is easy! Follow these steps to become a member and start benefiting from our programs and community:</p>
+                </div>
+                <div class="space-y-6 max-w-2xl mx-auto">
+                    <!-- Step 1 -->
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-2xl text-[#1dc962] mt-1">check_circle</span>
+                        <p class="text-gray-700 text-lg">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_knJpLxzTSxMUadPO1y5PbaXSvpBVFPVLtleiRCucb0Z2UA/viewform?usp=dialogs" 
+       target="_blank" 
+       rel="noopener noreferrer"
+    class="flex items-center justify-center rounded-md h-10 px-6 bg-[#1dc962] text-white font-semibold shadow-sm hover:bg-[#18a350] transition-colors">
+    Complete the Form.
+    </a>
+                        </p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-2xl text-[#1dc962] mt-1">check_circle</span>
+                        <p class="text-gray-700 text-lg">Follow the instructions in membership confiration email you get after your registration.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-2xl text-[#1dc962] mt-1">check_circle</span>
+                        <p class="text-gray-700 text-lg">Participate in our community events and programs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             Programs & Projects Section (UPDATED)
+        ========================== -->
+        <section class="py-20 px-10" id="programs-projects">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-8">
+                    <h2 class="text-gray-900 text-4xl font-bold leading-tight tracking-tighter">Programs & Projects</h2>
+                     </div>
+
+                <!-- Status Filters (tags removed) -->
+                <div class="flex items-center gap-3 p-4 mb-6"></div>
+                    <span class="text-gray-700 font-semibold">Status:</span>
+                    <div class="inline-flex gap-2" role="tablist" aria-label="project status filters">
+                        <button data-status="all" class="status-filter px-3 py-1 rounded-full bg-[#1dc962] text-white font-medium">All</button>
+                        <button data-status="ongoing" class="status-filter px-3 py-1 rounded-full bg-gray-200 text-gray-800">Ongoing</button>
+                        <button data-status="upcoming" class="status-filter px-3 py-1 rounded-full bg-gray-200 text-gray-800">Upcoming</button>
+                        <button data-status="done" class="status-filter px-3 py-1 rounded-full bg-gray-200 text-gray-800">Done</button>
+                    </div>
+                </div>
+
+                <!-- Horizontal scrollable projects list with left/right buttons -->
+                <div class="relative">
+                    <!-- Left arrow -->
+                    <button id="scroll-left" aria-label="Scroll left"
+                            class="absolute left-1 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white shadow hover:bg-gray-100">
+                        <svg class="w-5 h-5 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+
+                    <div id="projects-scroller" class="overflow-x-auto no-scrollbar -mx-4 px-4">
+                        <div id="projects-row" class="flex gap-6 w-max py-4">
+                            <!-- Example project cards -->
+                            <article class="min-w-[300px] max-w-[320px] flex-shrink-0 bg-white rounded-xl border border-gray-200 shadow-sm p-4"
+                                     data-status="ongoing">
+                                <img src="assets/image/lodge.jpg" alt="" class="h-36 w-full object-cover rounded-md mb-3">
+                                <h3 class="text-lg font-bold text-gray-900">Construction of Lodge for Muslim Corps Members</h3>
+                                <p class="text-sm text-gray-600 mt-1">Provide safe accommodation and convenience for Muslim corps members during their NYSC service year.</p>
+                                <div class="mt-3 flex items-center justify-between text-sm">
+                                    <span class="inline-block px-2 py-1 rounded-full bg-[#1dc962]/10 text-[#1dc962] font-medium">Ongoing</span>
+                                    <div class="flex gap-2 text-xs text-gray-600">
+                                        <span class="px-2 py-1 rounded bg-gray-100">Welfare</span>
+                                        <span class="px-2 py-1 rounded bg-gray-100">Accommodation</span>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- Add more project cards as needed (set data-status attribute) -->
+                        </div>
+                    </div>
+
+                    <!-- Right arrow -->
+                    <button id="scroll-right" aria-label="Scroll right"
+                            class="absolute right-1 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-10 h-10 rounded-full bg-white shadow hover:bg-gray-100">
+                        <svg class="w-5 h-5 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+ </div>
+
+            <!-- Inline styles to hide scrollbar on most browsers -->
+            <style>
+                .no-scrollbar::-webkit-scrollbar { height: 8px; }
+                .no-scrollbar::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.08); border-radius: 8px; }
+                .no-scrollbar { -ms-overflow-style: none; scrollbar-width: thin; }
+            </style>
+
+            <!-- Filtering & scrolling logic (tags removed) -->
+            <script>
+                (function(){
+                    const statusButtons = document.querySelectorAll('.status-filter');
+                    const projects = Array.from(document.querySelectorAll('#projects-row > article'));
+                    const scroller = document.getElementById('projects-scroller');
+                    const leftBtn = document.getElementById('scroll-left');
+                    const rightBtn = document.getElementById('scroll-right');
+                    let activeStatus = 'all';
+
+                    function updateFilters() {
+                        statusButtons.forEach(btn => {
+                            if (btn.dataset.status === activeStatus) {
+                                btn.classList.add('bg-[#1dc962]','text-white');
+                                btn.classList.remove('bg-gray-200','text-gray-800');
+                            } else {
+                                btn.classList.remove('bg-[#1dc962]','text-white');
+                                btn.classList.add('bg-gray-200','text-gray-800');
+                            }
+                        });
+
+                        projects.forEach(proj => {
+                            const status = proj.dataset.status || '';
+                            const statusMatch = (activeStatus === 'all') || (status === activeStatus);
+                            proj.style.display = statusMatch ? '' : 'none';
+                        });
+                    }
+
+                    statusButtons.forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            activeStatus = btn.dataset.status;
+                            updateFilters();
+                        });
+                    });
+
+                    // scroll amount = approx one card + gap
+                    const scrollAmount = 340;
+
+                    leftBtn.addEventListener('click', () => {
+                        scroller.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    });
+                    rightBtn.addEventListener('click', () => {
+                        scroller.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    });
+
+                    // show arrows if overflow present
+                    function updateArrowVisibility() {
+                        if (!scroller) return;
+                        const hasOverflow = scroller.scrollWidth > scroller.clientWidth + 2;
+                        leftBtn.style.display = hasOverflow ? 'flex' : 'none';
+                        rightBtn.style.display = hasOverflow ? 'flex' : 'none';
+                    }
+
+                    window.addEventListener('resize', updateArrowVisibility);
+                    document.addEventListener('DOMContentLoaded', () => {
+                        updateFilters();
+                        updateArrowVisibility();
+                    });
+                })();
+            </script>
+        </section>
+
+        <!-- =========================
+             Get Involved Section
+        ========================== -->
+        <section class="py-20 px-10" id="get-involved">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-gray-900 text-4xl font-bold leading-tight tracking-tighter">Get Involved</h2>
+                <p class="mt-4 text-gray-600 text-lg">
+                    We welcome support from sponsors, partners, and the general public to help us achieve our mission. Your involvement can make a significant impact on the lives of
+                    Muslim corpers in the FCT.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_knJpLxzTSxMUadPO1y5PbaXSvpBVFPVLtleiRCucb0Z2UA/viewform?usp=dialog"
+                         target="_blank" rel="noopener noreferrer"
+                         class="w-full sm:w-auto flex-1 sm:flex-none min-w-0 sm:min-w-[84px] max-w-[480px] flex items-center justify-center h-12 px-6 bg-[#1dc962] text-white text-base font-semibold rounded-md shadow-sm hover:bg-[#18a350] transition-colors text-center">
+                        Sponsor Us
+                    </a>
+
+                    <a href="#"
+                         class="w-full sm:w-auto flex-1 sm:flex-none min-w-0 sm:min-w-[84px] max-w-[480px] flex items-center justify-center h-12 px-6 bg-gray-200 text-gray-800 text-base font-semibold rounded-md shadow-sm hover:bg-gray-300 transition-colors text-center">
+                        Partner With Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+             Contact Section
+        ========================== -->
+      <section class="bg-gray-50 py-20 px-10" id="contact">
+  <div class="max-w-2xl mx-auto text-center">
+    <!-- Heading -->
+    <h2 class="text-gray-900 text-4xl font-bold leading-tight tracking-tighter mb-4 animate-fadeInUp">
+      Contact Us
+    </h2>
+    <p class="mt-2 text-gray-600 text-lg mb-10 animate-fadeInUp delay-100">
+      Have questions or want to get in touch? Reach us directly.
+    </p>
+
+    <!-- Contact Options -->
+    <div class="space-y-6">
+      <!-- Email -->
+      <a href="mailto:mcaninfct@gmail.com" 
+         class="flex items-center justify-center gap-3 text-lg font-semibold text-gray-800 bg-white shadow-md rounded-xl px-6 py-4 hover:bg-[#1dc962] hover:text-white transition transform hover:-translate-y-1 animate-fadeInUp delay-200">
+        <!-- Icon -->
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M2.25 6.75v10.5A2.25 2.25 0 0 0 4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15A2.25 2.25 0 0 0 2.25 6.75Zm1.5 0 8.25 5.25 8.25-5.25v-.75l-8.25 5.25-8.25-5.25v.75Z"/>
+        </svg>
+        mcaninfct@gmail.com
+      </a>
+
+      <!-- Phone -->
+      <a href="tel:+2349035131946" 
+         class="flex items-center justify-center gap-3 text-lg font-semibold text-gray-800 bg-white shadow-md rounded-xl px-6 py-4 hover:bg-[#1dc962] hover:text-white transition transform hover:-translate-y-1 animate-fadeInUp delay-300">
+        <!-- Icon -->
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M2.25 4.5A2.25 2.25 0 0 1 4.5 2.25h2.25a2.25 2.25 0 0 1 2.25 2.25v2.25a2.25 2.25 0 0 1-2.25 2.25H5.25v.75a9.75 9.75 0 0 0 9.75 9.75h.75v-1.5a2.25 2.25 0 0 1 2.25-2.25h2.25A2.25 2.25 0 0 1 21.75 16.5v2.25a2.25 2.25 0 0 1-2.25 2.25h-1.5A15.75 15.75 0 0 1 2.25 6v-1.5Z"/>
+        </svg>
+        +2349035131946
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Tailwind animations -->
+<style>
+@keyframes fadeInUp {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.animate-fadeInUp.delay-100 { animation-delay: 0.1s; }
+.animate-fadeInUp.delay-200 { animation-delay: 0.2s; }
+.animate-fadeInUp.delay-300 { animation-delay: 0.3s; }
+</style>
+    </main>
+
+    <!-- =========================
+         Footer Section
+    ========================== -->
+    <footer class="bg-gray-800 text-white">
+        <div class="max-w-6xl mx-auto py-12 px-10">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold">MCAN FCT</h3>
+                    <p class="text-gray-400 mt-2">Empowering Muslim Corpers</p>
+                </div>
+                <div class="flex gap-4">
+                    <!-- Social Media Icons (SVG) -->
+                    <div class="flex space-x-4">
+  <!-- Twitter / X -->
+  <a class="text-gray-400 hover:text-white transition-colors" href="https://x.com/mcanfct" target="_blank" aria-label="Twitter">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.964 6.817H1.683l7.73-8.84L1.25 2.25h6.92l4.713 6.231L18.244 2.25Zm-1.162 17.52h1.833L7.084 4.126H5.117l11.965 15.644Z"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a class="text-gray-400 hover:text-white transition-colors" href="https://www.instagram.com/mcanfctofficial/" target="_blank" aria-label="Instagram">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a class="text-gray-400 hover:text-white transition-colors" href="https://www.linkedin.com/company/mcan-fct/about/" target="_blank" aria-label="LinkedIn">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.451 20.452h-3.554v-5.569c0-1.328-.026-3.037-1.85-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.358V9h3.413v1.561h.05c.476-.9 1.637-1.85 3.367-1.85 3.598 0 4.264 2.367 4.264 5.448v6.293ZM5.337 7.433a2.063 2.063 0 1 1 0-4.126 2.063 2.063 0 0 1 0 4.126ZM7.119 20.452H3.553V9h3.566v11.452Z"/>
+    </svg>
+  </a>
+
+
+</div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>© 2025 MCAN FCT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+</body>
+</html>

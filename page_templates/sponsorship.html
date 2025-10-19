@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sponsorship - MCAN</title>
+    <style>
+        /* Import external CSS */
+        @import url('/assets/index-BCWuoL1n.css');
+
+        /* Custom animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #006400 0%, #008000 50%, #90EE90 100%);
+        }
+
+        .hero-text {
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 1px 1px 3px rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50" cz-shortcut-listen="true">
+
+
+    <!-- Hero Section with Navigation -->
+    <section class="min-h-screen flex flex-col relative overflow-hidden" style="background-image: url('./assets/image/Sponsorship%20Page.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <!-- Dark overlay for better text readability -->
+        <div class="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+
+        <!-- Navigation on top of hero -->
+        <nav class="relative z-50 w-full">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="/assets/image/mcan-logo.png" alt="MCAN Logo" class="h-10 w-auto">
+                        <span class="text-xl font-bold text-gray-900" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">MCAN</span>
+                    </div>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="index.html" class="text-gray-900 hover:text-mcan-primary transition-colors font-semibold" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">Home</a>
+                        <a href="about.html" class="text-gray-900 hover:text-mcan-primary transition-colors font-semibold" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">About</a>
+                        <a href="services.html" class="text-gray-900 hover:text-mcan-primary transition-colors font-semibold" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">Services</a>
+                        <a href="projects.html" class="text-gray-900 hover:text-mcan-primary transition-colors font-semibold" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">Projects</a>
+                        <a href="sponsorship.html" class="text-mcan-primary font-bold" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">Sponsorship</a>
+                        <a href="community.html" class="text-gray-900 hover:text-mcan-primary transition-colors font-semibold" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">Community</a>
+                        <a href="lodge.html" class="text-gray-900 hover:text-mcan-primary transition-colors font-semibold" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">Lodge</a>
+                        <a href="contact.html" class="text-gray-900 hover:text-mcan-primary transition-colors font-semibold" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">Contact</a>
+                    </div>
+                    <button class="bg-mcan-primary text-white px-6 py-2 rounded-full hover:bg-mcan-secondary transition-colors">
+                        Join MCAN
+                    </button>
+                    <!-- Mobile menu button -->
+                    <button class="md:hidden text-gray-900" onclick="toggleMobileMenu()" style="text-shadow: 1px 1px 2px rgba(255,255,255,0.8);">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="hidden md:hidden pb-4">
+                    <a href="index.html" class="block py-2 text-gray-900 hover:text-mcan-primary bg-white bg-opacity-80 rounded px-2">Home</a>
+                    <a href="about.html" class="block py-2 text-gray-900 hover:text-mcan-primary bg-white bg-opacity-80 rounded px-2">About</a>
+                    <a href="services.html" class="block py-2 text-gray-900 hover:text-mcan-primary bg-white bg-opacity-80 rounded px-2">Services</a>
+                    <a href="projects.html" class="block py-2 text-gray-900 hover:text-mcan-primary bg-white bg-opacity-80 rounded px-2">Projects</a>
+                    <a href="sponsorship.html" class="block py-2 text-mcan-primary font-bold bg-white bg-opacity-80 rounded px-2">Sponsorship</a>
+                    <a href="community.html" class="block py-2 text-gray-900 hover:text-mcan-primary bg-white bg-opacity-80 rounded px-2">Community</a>
+                    <a href="lodge.html" class="block py-2 text-gray-900 hover:text-mcan-primary bg-white bg-opacity-80 rounded px-2">Lodge</a>
+                    <a href="contact.html" class="block py-2 text-gray-900 hover:text-mcan-primary bg-white bg-opacity-80 rounded px-2">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="flex-1 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+        <div class="container mx-auto px-6 sm:px-8 lg:px-12 relative z-20">
+            <div class="text-center text-white hero-text">
+                <div class="animate-fadeInUp">
+                    <img src="/assets/image/mcan-logo.png" alt="MCAN FCT Logo" class="h-24 w-auto mx-auto mb-8 animate-float">
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fadeInUp">
+                    Partnership & <span class="text-mcan-light">Sponsorship</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate-fadeInUp opacity-90 leading-relaxed">
+                    Join us in supporting Muslim corps members through Islamic sponsorship opportunities and meaningful partnerships.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsorship Opportunities Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Sponsorship Opportunities</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Partner with MCAN to make a lasting impact in Islamic education, community welfare, and Muslim youth development.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+                <div class="bg-gradient-to-br from-mcan-primary/5 to-mcan-secondary/5 p-10 rounded-2xl hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-mcan-primary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Islamic Education Sponsorship</h3>
+                    <p class="text-gray-600 text-center mb-6 leading-relaxed">Support Islamic education programs, Quran classes, and spiritual development initiatives.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Islamic scholarship programs</li>
+                        <li>• Quran memorization support</li>
+                        <li>• Islamic library development</li>
+                        <li>• Arabic language programs</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-mcan-secondary/5 to-mcan-light/5 p-10 rounded-2xl hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-mcan-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Mosque & Islamic Center Support</h3>
+                    <p class="text-gray-600 text-center mb-6 leading-relaxed">Help build and maintain mosques and Islamic centers for Muslim corps members.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Mosque construction</li>
+                        <li>• Prayer facility maintenance</li>
+                        <li>• Islamic center development</li>
+                        <li>• Religious equipment</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-mcan-light/5 to-mcan-primary/5 p-10 rounded-2xl hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 bg-mcan-light rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-mcan-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Event Sponsorship</h3>
+                    <p class="text-gray-600 text-center mb-6 leading-relaxed">Sponsor conferences, workshops, and community events that drive innovation.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Tech conferences</li>
+                        <li>• Community workshops</li>
+                        <li>• Innovation challenges</li>
+                        <li>• Networking events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="container mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Partnership Benefits</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Discover the advantages of partnering with MCAN FCT and the positive impact we can create together.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-mcan-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Brand Visibility</h3>
+                                <p class="text-gray-600 leading-relaxed">Increase your brand exposure through our events, programs, and digital platforms.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-mcan-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Community Impact</h3>
+                                <p class="text-gray-600">Make a meaningful difference in education and technology advancement.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-mcan-light rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-mcan-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Networking Opportunities</h3>
+                                <p class="text-gray-600">Connect with industry leaders, innovators, and potential partners.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-8 h-8 bg-gradient-to-r from-mcan-primary to-mcan-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">Tax Benefits</h3>
+                                <p class="text-gray-600">Enjoy potential tax advantages through charitable contributions and CSR initiatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-10 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Ready to Partner?</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Join us in creating positive change and building a better future for our community.
+                    </p>
+                    <div class="space-y-4">
+                        <button class="w-full bg-mcan-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-mcan-secondary transition-colors">
+                            Become a Sponsor
+                        </button>
+                        <button class="w-full border-2 border-mcan-primary text-mcan-primary px-6 py-3 rounded-full font-semibold hover:bg-mcan-primary hover:text-white transition-colors">
+                            Download Sponsorship Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 sm:px-8 lg:px-12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <img src="/assets/image/mcan-logo.png" alt="MCAN FCT Logo" class="h-8 w-auto">
+                    <span class="text-xl font-bold">MCAN FCT</span>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© 2024 MCAN FCT. All rights reserved.</p>
+                    <p class="text-gray-400">Building the future, today.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Simple scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for scroll animations
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>

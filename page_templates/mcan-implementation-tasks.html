@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCAN Implementation Tasks - Muslim Corpers' Association of Nigeria</title>
+    <style>
+        /* Import external CSS */
+        @import url('/assets/index-BCWuoL1n.css');
+
+        .task-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+            border-left: 4px solid #006400;
+        }
+
+        .task-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .task-number {
+            background: #006400;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 16px;
+        }
+
+        .task-title {
+            color: #006400;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .task-description {
+            color: #6b7280;
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .task-details {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .task-checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .task-checklist li {
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .task-checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            color: #006400;
+            font-size: 18px;
+        }
+
+        .priority-high {
+            border-left-color: #dc3545;
+        }
+
+        .priority-medium {
+            border-left-color: #ffc107;
+        }
+
+        .priority-low {
+            border-left-color: #28a745;
+        }
+
+        .page-title {
+            color: #006400;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .islamic-quote {
+            background: linear-gradient(135deg, #006400, #008000);
+            color: white;
+            padding: 24px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 32px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-12 max-w-6xl">
+        <h1 class="page-title">MCAN Implementation Tasks</h1>
+        <p class="page-subtitle">
+            Comprehensive task list for implementing Muslim Corpers' Association of Nigeria (MCAN) 
+            branding and content across all website pages
+        </p>
+
+        <div class="islamic-quote">
+            <p class="text-lg mb-2">"Say verily, my prayer, my sacrifice, my living, and my dying are for Allah, the lord of the worlds"</p>
+            <p class="text-sm opacity-90">- Quran 16:162</p>
+        </div>
+
+        <!-- Task 1 -->
+        <div class="task-card priority-high">
+            <div class="task-header">
+                <div class="task-number">1</div>
+                <h2 class="task-title">Update All Page Titles and Branding</h2>
+            </div>
+            <p class="task-description">
+                Replace all instances of "MCAN FCT" with "MCAN" (Muslim Corpers' Association of Nigeria) across all pages and update meta titles.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> High | <strong>Estimated Time:</strong> 2-3 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Update landing.html title and navigation branding</li>
+                <li>Update about.html with MCAN full name and mission</li>
+                <li>Update services.html to reflect MCAN programs</li>
+                <li>Update projects.html with MCAN community projects</li>
+                <li>Update sponsorship.html for MCAN sponsorship opportunities</li>
+                <li>Update community.html with Muslim corps member focus</li>
+                <li>Update lodge.html for MCAN accommodation services</li>
+                <li>Update contact.html with MCAN contact information</li>
+                <li>Update all meta titles and descriptions</li>
+                <li>Update footer branding across all pages</li>
+            </ul>
+        </div>
+
+        <!-- Task 2 -->
+        <div class="task-card priority-high">
+            <div class="task-header">
+                <div class="task-number">2</div>
+                <h2 class="task-title">Implement Islamic Visual Identity</h2>
+            </div>
+            <p class="task-description">
+                Update color schemes, add Islamic design elements, and ensure visual consistency with MCAN's Islamic identity.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> High | <strong>Estimated Time:</strong> 4-5 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Update CSS color variables to MCAN green palette</li>
+                <li>Add Islamic geometric patterns to hero sections</li>
+                <li>Include crescent and star motifs in design elements</li>
+                <li>Add Arabic calligraphy-inspired decorative elements</li>
+                <li>Update icons to include Islamic symbols where appropriate</li>
+                <li>Ensure all visual elements respect Islamic aesthetic principles</li>
+                <li>Add subtle Islamic patterns to section backgrounds</li>
+                <li>Update button styles with Islamic-inspired design</li>
+                <li>Add prayer time widget or Islamic calendar integration</li>
+                <li>Include Quranic verse styling and typography</li>
+            </ul>
+        </div>
+
+        <!-- Task 3 -->
+        <div class="task-card priority-high">
+            <div class="task-header">
+                <div class="task-number">3</div>
+                <h2 class="task-title">Create MCAN About Page Content</h2>
+            </div>
+            <p class="task-description">
+                Completely rewrite the about page to reflect MCAN's mission, vision, values, and leadership structure.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> High | <strong>Estimated Time:</strong> 3-4 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Add MCAN mission statement and vision</li>
+                <li>Include the four core values with Islamic context</li>
+                <li>Add leadership section with provided names and roles</li>
+                <li>Include organization history and founding principles</li>
+                <li>Add Islamic foundation and Quranic verse reference</li>
+                <li>Include statistics about Muslim corps members served</li>
+                <li>Add testimonials from Muslim corps members</li>
+                <li>Include MCAN's role in national service</li>
+                <li>Add section about Islamic brotherhood/sisterhood</li>
+                <li>Include call-to-action for joining MCAN</li>
+            </ul>
+        </div>
+
+        <!-- Task 4 -->
+        <div class="task-card priority-medium">
+            <div class="task-header">
+                <div class="task-number">4</div>
+                <h2 class="task-title">Develop MCAN Services and Programs Page</h2>
+            </div>
+            <p class="task-description">
+                Transform the services page to showcase MCAN's spiritual, educational, and support programs for Muslim corps members.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> Medium | <strong>Estimated Time:</strong> 4-5 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Add Islamic education programs (Quran classes, lectures)</li>
+                <li>Include spiritual guidance and counseling services</li>
+                <li>Add welfare and support services for corps members</li>
+                <li>Include professional development programs</li>
+                <li>Add community outreach and da'wah activities</li>
+                <li>Include Islamic resources and library services</li>
+                <li>Add mentorship programs for Muslim youth</li>
+                <li>Include Islamic events and celebrations</li>
+                <li>Add marriage counseling and family support</li>
+                <li>Include emergency support and assistance programs</li>
+            </ul>
+        </div>
+
+        <!-- Task 5 -->
+        <div class="task-card priority-medium">
+            <div class="task-header">
+                <div class="task-number">5</div>
+                <h2 class="task-title">Update Projects Page with MCAN Initiatives</h2>
+            </div>
+            <p class="task-description">
+                Showcase MCAN's community projects, Islamic education initiatives, and social impact programs.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> Medium | <strong>Estimated Time:</strong> 3-4 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Add Islamic education and literacy projects</li>
+                <li>Include mosque construction and renovation projects</li>
+                <li>Add community welfare and charity initiatives</li>
+                <li>Include da'wah and Islamic outreach programs</li>
+                <li>Add youth empowerment and skill development projects</li>
+                <li>Include interfaith dialogue and peace-building initiatives</li>
+                <li>Add environmental and sustainability projects (Islamic perspective)</li>
+                <li>Include healthcare and medical outreach programs</li>
+                <li>Add scholarship and educational support programs</li>
+                <li>Include disaster relief and emergency response projects</li>
+            </ul>
+        </div>
+
+        <!-- Task 6 -->
+        <div class="task-card priority-medium">
+            <div class="task-header">
+                <div class="task-number">6</div>
+                <h2 class="task-title">Redesign Sponsorship Page for Islamic Context</h2>
+            </div>
+            <p class="task-description">
+                Adapt sponsorship opportunities to align with Islamic principles and MCAN's mission of supporting Muslim corps members.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> Medium | <strong>Estimated Time:</strong> 2-3 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Add Islamic education sponsorship opportunities</li>
+                <li>Include mosque and Islamic center support</li>
+                <li>Add scholarship programs for Muslim students</li>
+                <li>Include Quran distribution and Islamic book programs</li>
+                <li>Add iftar and Islamic event sponsorships</li>
+                <li>Include hajj and umrah support programs</li>
+                <li>Add Islamic conference and seminar sponsorships</li>
+                <li>Include community welfare and charity sponsorships</li>
+                <li>Add Islamic media and publication support</li>
+                <li>Include zakat and sadaqah collection programs</li>
+            </ul>
+        </div>
+
+        <!-- Task 7 -->
+        <div class="task-card priority-low">
+            <div class="task-header">
+                <div class="task-number">7</div>
+                <h2 class="task-title">Transform Community Page for Muslim Corps Members</h2>
+            </div>
+            <p class="task-description">
+                Focus the community page on Muslim corps member engagement, Islamic brotherhood, and spiritual community building.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> Low | <strong>Estimated Time:</strong> 3-4 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Add Muslim corps member testimonials and stories</li>
+                <li>Include Islamic brotherhood/sisterhood activities</li>
+                <li>Add community prayer and worship programs</li>
+                <li>Include Islamic study circles and discussion groups</li>
+                <li>Add volunteer opportunities in Islamic context</li>
+                <li>Include community iftar and Islamic celebrations</li>
+                <li>Add mentorship programs for new Muslim corps members</li>
+                <li>Include Islamic marriage and family support</li>
+                <li>Add community service projects with Islamic values</li>
+                <li>Include da'wah and Islamic outreach activities</li>
+            </ul>
+        </div>
+
+        <!-- Task 8 -->
+        <div class="task-card priority-low">
+            <div class="task-header">
+                <div class="task-number">8</div>
+                <h2 class="task-title">Update Lodge Page for MCAN Accommodation</h2>
+            </div>
+            <p class="task-description">
+                Adapt the lodge page to reflect MCAN's accommodation services with Islamic hospitality principles.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> Low | <strong>Estimated Time:</strong> 2-3 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Add Islamic hospitality principles and values</li>
+                <li>Include prayer facilities and qibla direction</li>
+                <li>Add halal dining and catering services</li>
+                <li>Include Islamic conference and event facilities</li>
+                <li>Add separate accommodation for male and female guests</li>
+                <li>Include Islamic library and study areas</li>
+                <li>Add mosque or prayer hall facilities</li>
+                <li>Include Islamic art and calligraphy in decor</li>
+                <li>Add Islamic event hosting capabilities</li>
+                <li>Include spiritual retreat and reflection spaces</li>
+            </ul>
+        </div>
+
+        <!-- Task 9 -->
+        <div class="task-card priority-medium">
+            <div class="task-header">
+                <div class="task-number">9</div>
+                <h2 class="task-title">Update Contact Information and Add Islamic Resources</h2>
+            </div>
+            <p class="task-description">
+                Update contact page with MCAN-specific information and add Islamic resources and quick links.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> Medium | <strong>Estimated Time:</strong> 2-3 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Update contact information with MCAN details</li>
+                <li>Add Islamic resources and quick links section</li>
+                <li>Include prayer times and Islamic calendar</li>
+                <li>Add links to Quran classes and Islamic lectures</li>
+                <li>Include emergency contact for Muslim corps members</li>
+                <li>Add social media links for MCAN platforms</li>
+                <li>Include Islamic counseling and guidance contacts</li>
+                <li>Add donation and zakat collection information</li>
+                <li>Include Islamic event notifications signup</li>
+                <li>Add feedback form for MCAN services</li>
+            </ul>
+        </div>
+
+        <!-- Task 10 -->
+        <div class="task-card priority-high">
+            <div class="task-header">
+                <div class="task-number">10</div>
+                <h2 class="task-title">Generate and Implement Islamic-Themed Hero Images</h2>
+            </div>
+            <p class="task-description">
+                Use the updated image prompts to generate Islamic-themed 3D hero images and implement them across all pages.
+            </p>
+            <div class="task-details">
+                <strong>Priority:</strong> High | <strong>Estimated Time:</strong> 4-6 hours
+            </div>
+            <ul class="task-checklist">
+                <li>Generate hero image for landing page with Islamic welcome theme</li>
+                <li>Create about page image with MCAN mission and values</li>
+                <li>Generate services page image with Islamic education elements</li>
+                <li>Create projects page image with community development theme</li>
+                <li>Generate sponsorship page image with Islamic charity concepts</li>
+                <li>Create community page image with Muslim brotherhood theme</li>
+                <li>Generate lodge page image with Islamic hospitality elements</li>
+                <li>Create contact page image with Islamic communication symbols</li>
+                <li>Optimize all images for web performance</li>
+                <li>Implement images with proper alt text and accessibility</li>
+            </ul>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="task-card" style="border-left-color: #008000; background: linear-gradient(135deg, #f8f9fa, #e8f5e8);">
+            <h2 class="section-title" style="color: #008000;">Implementation Summary</h2>
+            <div class="task-details">
+                <p><strong>Total Tasks:</strong> 10</p>
+                <p><strong>High Priority Tasks:</strong> 4</p>
+                <p><strong>Medium Priority Tasks:</strong> 4</p>
+                <p><strong>Low Priority Tasks:</strong> 2</p>
+                <p><strong>Estimated Total Time:</strong> 30-40 hours</p>
+                <p><strong>Recommended Timeline:</strong> 2-3 weeks</p>
+            </div>
+            <p class="task-description">
+                <strong>Success Metrics:</strong> Complete transformation of the website to reflect MCAN's Islamic identity, 
+                mission to support Muslim corps members, and alignment with Islamic values and principles. 
+                The final website should serve as a comprehensive platform for Muslim youth corps members 
+                seeking spiritual guidance, professional development, and community support.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
