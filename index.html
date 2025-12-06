@@ -205,9 +205,9 @@
                 <div class="flex items-center gap-3 p-4 mb-6"></div>
                     <span class="text-gray-700 font-semibold">Status:</span>
                     <div class="inline-flex gap-2" role="tablist" aria-label="project status filters">
+                        <button data-status="upcoming" class="status-filter px-3 py-1 rounded-full bg-gray-200 text-gray-800">Upcoming</button>
                         <button data-status="all" class="status-filter px-3 py-1 rounded-full bg-[#1dc962] text-white font-medium">All</button>
                         <button data-status="ongoing" class="status-filter px-3 py-1 rounded-full bg-gray-200 text-gray-800">Ongoing</button>
-                        <button data-status="upcoming" class="status-filter px-3 py-1 rounded-full bg-gray-200 text-gray-800">Upcoming</button>
                         <button data-status="done" class="status-filter px-3 py-1 rounded-full bg-gray-200 text-gray-800">Done</button>
                     </div>
                 </div>
@@ -281,7 +281,7 @@
                     const scroller = document.getElementById('projects-scroller');
                     const leftBtn = document.getElementById('scroll-left');
                     const rightBtn = document.getElementById('scroll-right');
-                    let activeStatus = 'all';
+                    let activeStatus = 'upcoming';
 
                     function updateFilters() {
                         statusButtons.forEach(btn => {
