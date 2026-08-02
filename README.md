@@ -1,6 +1,6 @@
 # MCAN - Muslim Corpers' Association of Nigeria
 
-![MCAN Logo](./assets/image/mcan-logo.png)
+![MCAN Logo](./assets/landing_page_assets/mcan-logo.png)
 
 ## About MCAN
 
